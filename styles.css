@@ -1,0 +1,46 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: Consolas, Helvetica, sans-serif;
+}
+section {
+    background: white;
+    color: black;
+    border-radius: 0.5em;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+ul {
+    text-align: left;
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: orange;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
