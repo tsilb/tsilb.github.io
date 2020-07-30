@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>silver nail — about</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="images/silver-nail-logo.png">
+        </div>
+        <div class="nav-links" id="mobileMenu">
+            <ul>
+                <a href="index.html"><li>home</li></a>
+                <a href="projects.html"><li>projects</li></a>
+                <a href=""><li>about</li></a>
+                <a href="contact.html"><li>contact</li></a>
+            </ul>
+            <img src="images/hamburger-menu.png" class="menu-icon" onclick="showMenu()">
+        </div>
+    </div>
 
-<h1>silver nail</h1>
-<p><a href="/">home</a> | <a href="/projects">projects</a> | <a href="/about">about</a></p>
+    <div class="hero">
+        <h2>about</h2>
+        <div class="body-content">
+            <p>Welcome, "silver nail" is derived from the German surname Silbernagel.</p>
+        </div>
+    </div>
 
-<br>
-<hr>
-<br>
-
-<section>
-    <h1>about us</h1>
-    <p>silver nail is derived from the german surname silbernagel</p>
-</section>
-
-<footer>
-  <p>© 2019 — silver nail</p>
-</footer>
+    <script>
+        function showMenu() {
+            var toggle = document.getElementById("mobileMenu");
+            if(toggle.style.height == "0px") {
+                toggle.style.height = "225px";
+            }
+            else {
+                toggle.style.height = "0px"
+            }                
+        }
+    </script>
 
 </body>
 </html>

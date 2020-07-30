@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Consolas, Helvetica, sans-serif;
+}
+body {
+    background: #000000;
+}
+.nav-bar {
+    display: flex;
+    padding: 2% 4%;
+}
+.nav-logo img{
+    width: 165px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 22.5px 25px;
+}
+.nav-links ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.hero {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+h1 {
+    font-size: 65px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+    margin-bottom: 3%;
+}
+h2 {
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    margin-bottom: 3%;
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.btn1 {
+    width: 175px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    margin: auto;
+    cursor: pointer;
+    animation: makeVisible 0s 3s forwards, fadeIn 3s 2s;
+    visibility: hidden;
+}
+.btn1 p {
+    font-size: 14px;
+    padding-top: 10px;
+}
+.btn1:hover {
+    background-color: #ffffff;
+    color: #000000
+}
+@keyframes makeVisible {
+    to { 
+        visibility: visible; 
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.body-content {
+    width: 725px;    
+    color: #ffffff;
+    margin: auto;    
+}
+.body-content p {
+    font-size: 13px;
+    padding-top: 10px;
+}
+.menu-icon {
+    width: 50px;
+    display: none;
+}
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 55px;
+        margin-bottom: 10%;
+    }
+    .hero h2 {
+        font-size: 30px;
+        margin-bottom: 10%;
+    }
+    .nav-links ul li {
+        display: block;
+        padding: 12.5px 10px;
+    }
+    .nav-links ul {
+        padding: 40px 12.5px;
+    }
+    .nav-links {
+        margin-top: 35px;
+    }
+    .nav-logo {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .menu-icon {
+        display: block;
+        top: 40px;
+        right: 40px;
+        position: absolute;
+        cursor: pointer;
+    }
+    #mobileMenu {
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+    }
+    .body-content {
+        width: 425px;
+    }
+}
