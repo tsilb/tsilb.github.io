@@ -17,8 +17,9 @@
                 <a href="/about"><li>about</li></a>
                 <a href="/contact"><li>contact</li></a>
             </ul>
-            <img src="images/hamburger-menu.png" class="menu-icon" onclick="showMenu()">
+            <img src="images/close-menu.png" class="close-menu-icon" onclick="closeMenu()">       
         </div>
+        <img src="images/hamburger-menu.png" class="menu-icon" onclick="openMenu()">
     </div>
 
     <div class="hero">
@@ -29,14 +30,11 @@
     </div>
 
     <script>
-        function showMenu() {
-            var toggle = document.getElementById("mobileMenu");
-            if(toggle.style.height == "0px") {
-                toggle.style.height = "225px";
-            }
-            else {
-                toggle.style.height = "0px"
-            }                
+        function openMenu() {
+            document.getElementById("mobileMenu").style.width = "100%"
+        }
+        function closeMenu() {
+            document.getElementById("mobileMenu").style.width = "0";
         }
     </script>
 

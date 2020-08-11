@@ -100,6 +100,25 @@ h2 {
     width: 50px;
     display: none;
 }
+.close-menu-icon {
+    width: 40px;
+    display: none;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+.footer p{
+    font-size: 12px;
+}
+.footer p a{
+    color: #ffffff;
+    text-decoration: none;
+}
 a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
@@ -114,14 +133,23 @@ a:hover, a:visited, a:link, a:active {
         margin-bottom: 10%;
     }
     .nav-links ul li {
-        display: block;
-        padding: 12.5px 10px;
+        display: block; 
+        padding: 18px;
     }
     .nav-links ul {
-        padding: 40px 12.5px;
+        padding: 45px;
     }
-    .nav-links {
-        margin-top: 35px;
+    .nav-links {        
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #000000;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align: center;
     }
     .nav-logo {
         margin-top: 10px;
@@ -134,10 +162,12 @@ a:hover, a:visited, a:link, a:active {
         position: absolute;
         cursor: pointer;
     }
-    #mobileMenu {
-        height: 0;
-        overflow: hidden;
-        transition: 1s;
+    .close-menu-icon {
+        display: block;
+        top: 40px;
+        left: 40px;
+        position: absolute;
+        cursor: pointer;
     }
     .body-content {
         width: 325px;
